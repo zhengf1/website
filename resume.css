@@ -38,6 +38,7 @@ body {
 h2 { font-size: 175% ;}
 h3 { font-size: 125%; }
 h4 { font-size: 125%; }
+h5 { font-size: 100%; }
 h1 { color: #333; }
 h2 { color: #008080; }
 h3 { color: #008080; }
@@ -99,7 +100,7 @@ a#pdf:hover { background: #222; }
 
 /* Style for all links */
 a {
-    color: inherit; /* Inherit the color from the parent element */
+    color: darkred; /* Inherit the color from the parent element */
     text-decoration: none; /* Remove the underline */
     font-size: 100%;
 }
