@@ -17,7 +17,10 @@
 .msg a:hover { background: #266400; }
 
 /* //-- yui-grids style overrides -- */
-body { font-family: Georgia; color: #444; }
+body {
+  font-family: 'Playfair Display', serif;
+  color: #444;
+}
 #inner { padding: 10px 80px; margin: 80px auto; background: #f5f5f5; border: solid #666; border-width: 8px 0 2px 0; }
 .yui-gf { margin-bottom: 2em; padding-bottom: 2em; border-bottom: 1px solid #ccc; }
 
@@ -31,16 +34,16 @@ body { font-family: Georgia; color: #444; }
 #ft p { margin-bottom: 0; text-align: center;   }
 
 /* //-- core typography and style -- */
-#hd h1 { font-size: 48px; text-transform: uppercase; letter-spacing: 3px; color: #008080}
-h2 { font-size: 132% ;}
-h3 { font-size: 118%; }
-h4 { font-size: 110%; }
+#hd h1 { font-size: 58px; text-transform: uppercase; letter-spacing: 3px; color: #003366}
+h2 { font-size: 175% ;}
+h3 { font-size: 125%; }
+h4 { font-size: 125%; }
 h1 { color: #333; }
-h2 { color: #556b2f; }
+h2 { color: #008080; }
 h3 { color: #008080; }
-h4 { color: #333; }
-p { font-size: 110%; line-height: 18px; padding-right: 3em; }
-a { color: #990003 }
+h4 { color: #333333; }
+p { font-size: 120%; line-height: 21px; padding-right: 3em; }
+a { font-size: 120%; color: #990003 }
 a:hover { text-decoration: none; }
 strong { font-weight: bold; }
 li { line-height: 24px; border-bottom: 1px solid #ccc; }
@@ -75,4 +78,85 @@ a#pdf:hover { background: #222; }
 .yui-gf .yui-u{width:80.2%;}
 .yui-gf div.first{width:12.3%;}
 
+#inner {
+    width: 95%; /* Increase the width of the container */
+    max-width: 1200px; /* Optional: Set a max-width to prevent it from becoming too wide on large screens */
+    padding: 10px 40px; /* Adjust padding for more space on the sides */
+    margin: 80px auto; /* Keep the auto margin for centering */
+    background: #f5f5f5;
+    border: solid #666;
+    border-width: 8px 0 2px 0;
+}
 
+.yui-gc {
+    width: 99%; /* Increase width to 90% of the container */
+    max-width: 1200px; /* Optional: Set a max-width for very large screens */
+    margin: 0 auto; /* Center the content horizontally */
+    display: flex; /* To align the content more effectively */
+    justify-content: space-between; /* Distribute space between the child elements */
+}
+
+
+/* Style for all links */
+a {
+    color: inherit; /* Inherit the color from the parent element */
+    text-decoration: none; /* Remove the underline */
+    font-size: 100%;
+}
+
+/* Optional: Style for hover effect, if needed */
+a:hover {
+    color: inherit; /* Ensure the color remains the same on hover */
+}
+
+    .year {
+            float: right;
+            font-size: 12px; /* Change this value as needed */
+            color: #555; /* Optional: Adjust color */
+        }
+/* Style for the top navbar */
+#navbar {
+    display: flex;            /* Use Flexbox to arrange items horizontally */
+    justify-content: center;  /* Center the items horizontally */
+    background-color: #333;   /* Background color for the navbar */
+    padding: 10px 20;          /* Space above and below the navbar */
+    position: fixed;          /* Make the navbar fixed at the top */
+    width: 100%;              /* Ensure the navbar stretches across the page */
+    top: 0;                   /* Position at the top */
+    left: 0;                  /* Position at the left edge */
+    z-index: 1000;            /* Make sure the navbar stays on top */
+}
+
+/* Adjust the content below the navbar to prevent overlap */
+body {
+    margin-top: 60px;          /* Add top margin to avoid overlap with the navbar */
+}
+
+#navbar a {
+    color: white;             /* Text color */
+    text-decoration: none;    /* Remove underlines from links */
+    padding: 20px 20px;       /* Space around each link */
+    font-size: 20px;          /* Font size */
+    text-align: center;       /* Center text in each link */
+}
+
+#navbar a:hover {
+    background-color: #575757; /* Background color on hover */
+}
+
+/* Media query for mobile (smaller screens) */
+@media screen and (max-width: 768px) {
+    #navbar {
+        flex-direction: column; /* Stack the navbar items vertically on small screens */
+    }
+
+    #navbar a {
+        padding: 15px;          /* Increase padding for mobile for better tap areas */
+        font-size: 20px;        /* Adjust font size for smaller screens */
+    }
+
+    /* Adjust the margin-top for mobile screens */
+    body {
+        margin-top: 100px;      /* Increase the margin-top for mobile to prevent overlap */
+    }
+}
