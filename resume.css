@@ -34,17 +34,17 @@ body {
 #ft p { margin-bottom: 0.2em; text-align: center;   }
 
 /* //-- core typography and style -- */
-#hd h1 { font-size: 58px; text-transform: uppercase; letter-spacing: 3px; color: #003366}
-h2 { font-size: 175% ;}
-h3 { font-size: 125%; }
-h4 { font-size: 125%; }
-h5 { font-size: 100%; }
+#hd h1 { font-size: 60px; text-transform: uppercase; letter-spacing: 3px; color: #003366}
+h2 { font-size: 185% ;}
+h3 { font-size: 165%; }
+h4 { font-size: 145%; }
+h5 { font-size: 120%; }
 h1 { color: #333; }
 h2 { color: #008080; }
 h3 { color: #008080; }
 h4 { color: #333333; }
-p { font-size: 120%; line-height: 21px; padding-right: 3em; }
-a { font-size: 120%; color: #990003 }
+p { font-size: 150%; line-height: 21px; padding-right: 3em; }
+a { font-size: 130%; color: #990003 }
 a:hover { text-decoration: none; }
 strong { font-weight: bold; }
 li { line-height: 24px; border-bottom: 1px solid #ccc; }
@@ -57,7 +57,7 @@ p.enlarge span { color: #000 }
 
 /* //-- section styles -- */
 
-a#pdf { display: block; float: left; background: #666; color: white; padding: 6px 50px 6px 12px; margin-bottom: 3px; text-decoration: none;  }
+a#pdf { display: inline-block; float: left; border-radius: 6px; background: #666; color: white; padding: 6px 12px 6px 12px; margin-bottom: 3px; text-decoration: none;  }
 a#pdf:hover { background: #222; }
 
 .job { position: relative; margin-bottom: 1em; padding-bottom: 0em; border-bottom: 1px solid #ccc; }
@@ -80,19 +80,19 @@ a#pdf:hover { background: #222; }
 .yui-gf div.first{width:12.3%;}
 
 #inner {
-    width: 95%; /* Increase the width of the container */
+    width: 80%; /* Increase the width of the container */
     max-width: 1200px; /* Optional: Set a max-width to prevent it from becoming too wide on large screens */
     padding: 10px 40px; /* Adjust padding for more space on the sides */
     margin: 80px auto; /* Keep the auto margin for centering */
     background: #f5f5f5;
     border: solid #666;
-    border-width: 8px 0 2px 0;
+    border-width: 8px 1px 8px 1px;
 }
 
 .yui-gc {
-    width: 99%; /* Increase width to 90% of the container */
+    width: 100%; /* Increase width to 90% of the container */
     max-width: 1200px; /* Optional: Set a max-width for very large screens */
-    margin: 0 auto; /* Center the content horizontally */
+    margin: 10px auto; /* Center the content horizontally */
     display: flex; /* To align the content more effectively */
     justify-content: space-between; /* Distribute space between the child elements */
 }
