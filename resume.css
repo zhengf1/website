@@ -1,163 +1,256 @@
-/*
----------------------------------------------------------------------------------
-	STRIPPED DOWN RESUME TEMPLATE
-    html resume
+/* =============================================================================
+   Academic Resume Template (Inspired by al-folio / jacobcoreno.github.io)
+   ============================================================================= */
 
-    v0.9: 5/28/09
-
-    design and code by: thingsthatarebrown.com 
-                        (matt brown)
----------------------------------------------------------------------------------
-*/
-
-
-.msg { padding: 10px; background: #222; position: relative; }
-.msg h1 { color: #fff;  }
-.msg a { margin-left: 20px; background: #408814; color: white; padding: 4px 8px; text-decoration: none; }
-.msg a:hover { background: #266400; }
-
-/* //-- yui-grids style overrides -- */
 body {
-  font-family: 'Playfair Display', serif;
-  color: #444;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  color: #1a1a1a;
+  background: #fff;
+  margin-top: 60px;
+  line-height: 1.6;
 }
-#inner { padding: 10px 80px; margin: 80px auto; background: #f5f5f5; border: solid #666; border-width: 8px 0 2px 0; }
-.yui-gf { margin-bottom: 2em; padding-bottom: 2em; border-bottom: 1px solid #ccc; }
 
-/* //-- header, body, footer -- */
-#hd { margin: 2.5em 0 3em 0; padding-bottom: 1.5em; border-bottom: 1px solid #ccc }
-#hd h2 { text-transform: uppercase; letter-spacing: 2px; }
-#bd, #ft { margin-bottom: 2em; }
-
-/* //-- footer -- */
-#ft { padding: 1em 0 0.01em 0; font-size: 90%; border-top: 3px solid #ccc; text-align: center; }
-#ft p { margin-bottom: 0.2em; text-align: center;   }
-
-/* //-- core typography and style -- */
-#hd h1 { font-size: 60px; text-transform: uppercase; letter-spacing: 3px; color: #003366}
-h2 { font-size: 185% ;}
-h3 { font-size: 165%; }
-h4 { font-size: 145%; }
-h5 { font-size: 120%; }
-h1 { color: #333; }
-h2 { color: #008080; }
-h3 { color: #008080; }
-h4 { color: #333333; }
-p { font-size: 150%; line-height: 21px; padding-right: 3em; }
-a { font-size: 130%; color: #990003 }
-a:hover { text-decoration: none; }
-strong { font-weight: bold; }
-li { line-height: 24px; border-bottom: 1px solid #ccc; }
-p.enlarge { font-size: 144%; padding-right: 6.5em; line-height: 24px; }
-p.enlarge span { color: #000 }
-.contact-info { margin-top: 7px; }
-.first h2 { font-style: italic; }
-.last { border-bottom: 0 }
-
-
-/* //-- section styles -- */
-
-a#pdf { display: inline-block; float: left; border-radius: 6px; background: #666; color: white; padding: 6px 12px 6px 12px; margin-bottom: 3px; text-decoration: none;  }
-a#pdf:hover { background: #222; }
-
-.job { position: relative; margin-bottom: 1em; padding-bottom: 0em; border-bottom: 1px solid #ccc; }
-.job h4 { position: absolute; top: 0.35em; right: 0 }
-.job p { margin: 0.75em 0 1.5em 0; }
-
-.last { border: none; }
-.skills-list {  }
-.skills-list ul { margin: 0; }
-.skills-list li { margin: 3px 0; padding: 3px 0; }
-.skills-list li span { font-size: 152%; display: block; margin-bottom: -2px; padding: 0 }
-.talent { width: 32%; float: left }
-.talent h2 { margin-bottom: 6px; }
-
-#srt-ttab { margin-bottom: 100px; text-align: center;  }
-#srt-ttab img.last { margin-top: 20px }
-
-/* --// override to force 1/8th width grids -- */
-.yui-gf .yui-u{width:80.2%;}
-.yui-gf div.first{width:12.3%;}
-
+/* === Container === */
 #inner {
-    width: 80%; /* Increase the width of the container */
-    max-width: 1200px; /* Optional: Set a max-width to prevent it from becoming too wide on large screens */
-    padding: 10px 40px; /* Adjust padding for more space on the sides */
-    margin: 80px auto; /* Keep the auto margin for centering */
-    background: #f5f5f5;
-    border: solid #666;
-    border-width: 8px 1px 8px 1px;
+  width: 80%;
+  max-width: 1060px;
+  padding: 0 0px;
+  margin: 80px auto;
 }
 
-.yui-gc {
-    width: 100%; /* Increase width to 90% of the container */
-    max-width: 1200px; /* Optional: Set a max-width for very large screens */
-    margin: 10px auto; /* Center the content horizontally */
-    display: flex; /* To align the content more effectively */
-    justify-content: space-between; /* Distribute space between the child elements */
-}
-
-
-/* Style for all links */
-a {
-    color: darkred; /* Inherit the color from the parent element */
-    text-decoration: none; /* Remove the underline */
-    font-size: 100%;
-}
-
-/* Optional: Style for hover effect, if needed */
-a:hover {
-    color: inherit; /* Ensure the color remains the same on hover */
-}
-
-    .year {
-            float: right;
-            font-size: 12px; /* Change this value as needed */
-            color: #555; /* Optional: Adjust color */
-        }
-/* Style for the top navbar */
+/* === Navigation Bar === */
 #navbar {
-    display: flex;            /* Use Flexbox to arrange items horizontally */
-    justify-content: center;  /* Center the items horizontally */
-    background-color: #333;   /* Background color for the navbar */
-    padding: 10px 20;          /* Space above and below the navbar */
-    position: fixed;          /* Make the navbar fixed at the top */
-    width: 100%;              /* Ensure the navbar stretches across the page */
-    top: 0;                   /* Position at the top */
-    left: 0;                  /* Position at the left edge */
-    z-index: 1000;            /* Make sure the navbar stays on top */
+  display: flex;
+  justify-content: center;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
-
-/* Adjust the content below the navbar to prevent overlap */
-body {
-    margin-top: 60px;          /* Add top margin to avoid overlap with the navbar */
-}
-
 #navbar a {
-    color: white;             /* Text color */
-    text-decoration: none;    /* Remove underlines from links */
-    padding: 20px 20px;       /* Space around each link */
-    font-size: 20px;          /* Font size */
-    text-align: center;       /* Center text in each link */
+  color: #333;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 16px;
 }
-
 #navbar a:hover {
-    background-color: #575757; /* Background color on hover */
+  text-decoration: underline;
+}
+#navbar a.active {
+  color: #0077cc;
+  font-weight: 600;
+  position: relative;
+  transition: color 0.3s ease;
 }
 
-/* Media query for mobile (smaller screens) */
+/* Gradient underline effect */
+#navbar a.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to right, #d63384 , #d63384);
+  border-radius: 2px;
+  transition: opacity 0.3s ease;
+}
+
+
+
+/* === Headers === */
+h1, h2, h3, h4, h5 {
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-top: 1em;
+}
+h1 { font-size: 2.5rem; margin-bottom: 0.2em; }
+h2 { font-size: 1.8rem; }
+h3 {
+  font-size: 1.4rem;
+  color: #2c3e50; /* professional slate gray */
+}
+h4 { font-size: 1.2rem; }
+h5 { font-size: 1rem; }
+/* Header container layout */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 2em;
+}
+
+/* Left: Name and title */
+.header-left h1 {
+  margin: 0;
+  font-size: 2.2rem;
+}
+.header-left h3 {
+  margin: 0.2em 0 0 0;
+  font-size: 1.2rem;
+  font-weight: normal;
+  color: #555;
+}
+
+/* Right: Contact information */
+.header-right .contact-info {
+  text-align: right;
+}
+.header-right p {
+  margin: 4px 0;
+  font-size: 0.95rem;
+}
+.header-right a {
+  color: #0077cc;
+  text-decoration: none;
+}
+.header-right a:hover {
+  text-decoration: underline;
+}
+
+/* Circle style for '@' */
+.circle {
+  display: inline-block;
+  width: 1.2em;
+  height: 1.2em;
+  line-height: 1.2em;
+  text-align: center;
+  border: 1px solid #0077cc;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 0.85em;
+  margin: 0 2px;
+  color: #0077cc;
+}
+
+/* Responsive: stack on smaller screens */
 @media screen and (max-width: 768px) {
-    #navbar {
-        flex-direction: column; /* Stack the navbar items vertically on small screens */
-    }
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .header-right .contact-info {
+    text-align: left;
+  }
+}
 
-    #navbar a {
-        padding: 15px;          /* Increase padding for mobile for better tap areas */
-        font-size: 20px;        /* Adjust font size for smaller screens */
-    }
 
-    /* Adjust the margin-top for mobile screens */
-    body {
-        margin-top: 100px;      /* Increase the margin-top for mobile to prevent overlap */
-    }
+/* === Typography === */
+p {
+  font-size: 1rem;
+  margin-bottom: 1em;
+}
+strong {
+  font-weight: 600;
+}
+a {
+  color: #0077cc;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+ul {
+  padding-left: 1.2em;
+}
+li {
+  margin-bottom: 0.6em;
+}
+
+/* === Resume Sections === */
+.job {
+  margin-bottom: 2em;
+}
+.job h4 {
+  float: right;
+  font-size: 0.9rem;
+  color: #666;
+}
+.job p {
+  margin: 0.5em 0 1em 0;
+}
+
+/* === Skills === */
+.skills-list ul {
+  list-style: none;
+  padding: 0;
+}
+.skills-list li {
+  padding: 3px 0;
+}
+.skills-list li span {
+  font-size: 1rem;
+  display: block;
+}
+
+/* === Footer === */
+#ft {
+  padding: 1em 0;
+  font-size: 0.9rem;
+  text-align: center;
+  color: #999;
+}
+#ft p {
+  margin: 0.3em 0;
+}
+
+/* === Download CV Button === */
+a#pdf {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  padding: 6px 12px;
+  font-size: 0.95rem;
+  border-radius: 4px;
+  text-decoration: none;
+  margin-top: 1em;
+}
+a#pdf:hover {
+  background: #333;
+}
+
+/* === Message Banner (Optional Notice) === */
+.msg {
+  padding: 10px;
+  background: #f0f0f0;
+  color: #111;
+  font-size: 1rem;
+  border-left: 4px solid #ccc;
+  margin: 2em 0;
+}
+
+/* === Responsive Adjustments === */
+@media screen and (max-width: 768px) {
+  #navbar {
+    flex-direction: column;
+  }
+  #navbar a {
+    padding: 10px;
+    font-size: 16px;
+  }
+  body {
+    margin-top: 100px;
+  }
+}
+
+
+#footer-bar {
+  position: fixed;
+  bottom: -15px;
+  left: 0;
+  width: 100%;
+  background-color: #f8f8f8;
+  color: #555;
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 1px 0;
+  border-top: 1px solid #ddd;
+  z-index: 1000;
+  box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.05);
 }
